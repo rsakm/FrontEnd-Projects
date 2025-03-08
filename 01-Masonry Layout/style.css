@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+.gallery{
+    /* display: flex;
+    flex-wrap: nowrap; */
+    columns: 3;
+    column-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    /* //break-inside: avoid;  */
+    /* Prevents images from breaking between columns */
+    margin-bottom: 10px; /* Prevents unwanted gaps */
+    border-radius: 8px; /* Optional: Gives smooth corners */
+}
